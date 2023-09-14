@@ -1,0 +1,25 @@
+    Start
+     |
+     V
+   Define Test Cases(What we want to test? what we need for the tests?)
+     |
+     V
+   Initialize Test Automation Framework(It is necessary to decide in which infrastructure and language we want to develop the automation, this step can and should if possible be at the same time as the test case)
+     |
+     V
+   Prepare Test Data(After we have decided which tests we are going to look for and what we need, we need to prepare the data like now, different types of voices, different Android systems)
+     |
+     V
+   Set Up Test Environment(Now we need to set up an Android environment that we can work with and receive responses from, different voices)
+     |
+     V
+   Execute Test Cases
+     |
+     V
+   Send results to reporting framework(As part of checking the results of the tests and investigating them, it will be very helpful and convenient to work with a system that presents results clearly like Allure for example)
+     |
+     V
+   Analyze Test Results
+     |
+     V
+    End

@@ -1,0 +1,5 @@
+VirtualEnvs/
+.pytest_cache/
+.idea/
+.DS_Store
+*/.DS_Store
