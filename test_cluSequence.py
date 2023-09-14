@@ -4,7 +4,7 @@ import csv
 def test_cluSequence():
     test_data = read_from_csv_file()
 
-    results, intent_similarity_percentage, entity_similarity_percentage, test_result = run_clu_tests(test_data, pass_criteria_percentage=70)
+    results, intent_similarity_percentage, entity_similarity_percentage, test_result = run_clu_via_api_and_get_test_result(test_data, pass_criteria_percentage=70)
 
     # Create a results log
     header = ["Utterance", "Expected Intent", "API Intent", "Expected Entity", "API Entity", "Intent Similarity", "Entity Similarity"]
@@ -31,7 +31,7 @@ def read_from_csv_file():
 
 
 # Function to run CLU AI Tests
-def run_clu_tests(test_data, pass_criteria_percentile):
+def run_clu_via_api_and_get_test_result(test_data, pass_criteria_percentile):
     results = []
     similar_intents = 0
     similar_entities = 0
